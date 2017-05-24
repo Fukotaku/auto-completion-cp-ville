@@ -1,0 +1,17 @@
+#suggestBoxElement {
+  border: 1px solid #8FABFF;
+  visibility:hidden;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.suggestions {
+  font-size: 14;
+  background-color: #eeeeee;
+}
+.suggestionMouseOver {
+  font-size: 14;
+  background: #3366ff;
+  color: white;
+}

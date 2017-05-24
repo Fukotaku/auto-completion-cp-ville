@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Exemple ACCPV</title>
+   <link rel="stylesheet" href="css/accpv.css">
+ </head>
+ <body>
+
+   <input id="code_postal" type="text" name="code_postal" onclick="GenerateParam(this.value)" onkeyup="GenerateParam(this.value)" onblur="closeSuggestBox();">
+   <div style="visibility:hidden;overflow-y:auto;overflow-x:hidden;" id="suggestBoxElement"></div>
+   <br><input id="ville" type="text" name="ville">
+
+   <script type="text/javascript" src="js/accpv.js"></script>
+ </body>
+</html>
