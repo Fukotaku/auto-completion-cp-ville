@@ -85,11 +85,11 @@ function suggestBox(results){
     document.getElementById('suggestBoxElement').innerHTML = suggestBoxHTML;
   } else {
     // Si il n'y a qu'une seule suggestion disponible, alors on l'ajoute automatiquement dans le champ "ville"
-    if (results.nhits == 1) {
+    if (results.nhits === 1) {
       var placeInput = document.getElementById("ville");
-      placeInput.value = codes_postaux[0][0];
+      placeInput.value = results.records[0].fields.nom_com;
       var postalInput = document.getElementById("code_postal");
-      postalInput.value = codes_postaux[0][1];
+      postalInput.value = results.records[0].fields.code_postal;
     }
     closeSuggestBox();
   }
